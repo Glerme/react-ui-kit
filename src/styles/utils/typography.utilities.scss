@@ -1,0 +1,83 @@
+@use 'sass:map';
+@use '../typography.scss';
+@use '../colors.scss';
+
+.heading1 {
+  font-size: map.get(typography.$sizes, "h1");
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.heading2 {
+  font-size: map.get(typography.$sizes, "h2");
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.heading3 {
+  font-size: map.get(typography.$sizes, "h3");
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.heading4 {
+  font-size: map.get(typography.$sizes, "h4");
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.heading5 {
+  font-size: map.get(typography.$sizes, "h5");
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.heading6 {
+  font-size: map.get(typography.$sizes, "h6");
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.body1 {
+  font-size: map.get(typography.$sizes, "b1");
+  font-weight: map.get(typography.$weights, "normal");
+}
+
+.body2 {
+  font-size: map.get(typography.$sizes, "b2");
+  font-weight: map.get(typography.$weights, "normal");
+}
+
+.body3 {
+  font-size: map.get(typography.$sizes, "b3");
+  font-weight: map.get(typography.$weights, "normal");
+}
+
+.body4 {
+  font-size: map.get(typography.$sizes, "b4");
+  font-weight: map.get(typography.$weights, "normal");
+}
+
+.caption1 {
+  font-size: map.get(typography.$sizes, "caption1");
+  font-weight: map.get(typography.$weights, "light");
+}
+
+.caption2 {
+  font-size: map.get(typography.$sizes, "caption2");
+  font-weight: map.get(typography.$weights, "light");
+}
+
+.text-light {
+  font-weight: map.get(typography.$weights, "light");
+}
+
+.text-normal {
+  font-weight: map.get(typography.$weights, "normal");
+}
+
+.text-semi-bold {
+  font-weight: map.get(typography.$weights, "semi-bold");
+}
+
+.text-bold {
+  font-weight: map.get(typography.$weights, "bold");
+}
+
+.text-extra-bold {
+  font-weight: map.get(typography.$weights, "extra-bold");
+}

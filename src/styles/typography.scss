@@ -1,0 +1,24 @@
+@use './colors.scss';
+
+$sizes: (
+  h1: 3.583rem,
+  h2: 2.986rem,
+  h3: 2.488rem,
+  h4: 2.074rem,
+  h5: 1.728rem,
+  h6: 1.44rem,
+  sh: 1.44rem,
+  b1: 1.2rem,
+  b2: 1rem,
+  b3: 0.833rem,
+  caption1: 0.694rem,
+  caption2: 0.579rem,
+);
+
+$weights: (
+  light: 400,
+  normal: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+);

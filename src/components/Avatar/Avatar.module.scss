@@ -1,0 +1,51 @@
+@import "../../styles/colors.scss";
+
+.avatar-container-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 24px;
+  text-decoration: unset;
+  color: unset;
+
+  cursor: pointer;
+}
+
+.avatar-icon {
+  border-radius: 50%;
+  background: $gray400;
+  padding: 3px;
+
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.avatar-notification {
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.5rem;
+  color: $white;
+
+  background-color: $primary;
+  position: absolute;
+  left: 15px;
+  top: -8px;
+
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+.avatar-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem 0 0.5rem;
+  pointer-events: none;
+}

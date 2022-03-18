@@ -1,0 +1,65 @@
+// Literal Colors
+
+$gray50: #f8fafc !default;
+$gray100: #f1f5f9 !default;
+$gray200: #e2e8f0 !default;
+$gray300: #cbd5e1 !default;
+$gray400: #94a3b8 !default;
+$gray500: #64748b !default;
+$gray600: #475569 !default;
+$gray700: #334155 !default;
+$gray800: #1e293b !default;
+$gray900: #0f172a !default;
+
+$primary50: #e6f0ff !default;
+$primary300: #b0caff !default;
+$primary500: #5d8def !default;
+$primary700: #275ac2 !default;
+$primary900: #1d438f !default;
+
+$secondary50: #cbbdff !default;
+$secondary300: #957cf2 !default;
+$secondary500: #6f4fe3 !default;
+$secondary700: #4827c2 !default;
+$secondary900: #301980 !default;
+
+$info50: #b9e2fa !default;
+$info300: #78cbfa !default;
+$info500: #46ade8 !default;
+$info700: #1b9be5 !default;
+$info900: #1578b0 !default;
+
+$success50: #dcfce7 !default;
+$success300: #a9f5c3 !default;
+$success500: #59de8a !default;
+$success700: #22c55e !default;
+$success900: #1a9c4a !default;
+
+$warning50: #fffbeb !default;
+$warning300: #fef3c7 !default;
+$warning500: #fcd65b !default;
+$warning700: #fbbf24 !default;
+$warning900: #db941a !default;
+
+$error50: #ffdbdb !default;
+$error300: #ff8282 !default;
+$error500: #f24b4b !default;
+$error700: #d12424 !default;
+$error900: #a31c1c !default;
+
+$black: #000000 !default;
+$white: #ffffff !default;
+
+// Contextual Colors
+
+$primary: $primary700 !default;
+$secondary: $secondary700 !default;
+$info: $info700 !default;
+$warning: $warning700 !default;
+$success: $success700 !default;
+$error: $error700 !default;
+
+// Text Colors
+$title: $gray800 !default;
+$text: $gray700 !default;
+$textLight: $white !default;

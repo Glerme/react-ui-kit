@@ -1,0 +1,69 @@
+@use '../colors.scss';
+
+$all_colors: (
+  white: colors.$white,
+  black: colors.$black,
+  gray100: colors.$gray100,
+  gray200: colors.$gray200,
+  gray300: colors.$gray300,
+  gray400: colors.$gray400,
+  gray500: colors.$gray500,
+  gray700: colors.$gray700,
+  gray800: colors.$gray800,
+  gray900: colors.$gray900,
+  primary50: colors.$primary50,
+  primary300: colors.$primary300,
+  primary500: colors.$primary500,
+  primary700: colors.$primary700,
+  primary900: colors.$primary900,
+  secondary50: colors.$secondary50,
+  secondary300: colors.$secondary300,
+  secondary500: colors.$secondary500,
+  secondary700: colors.$secondary700,
+  secondary900: colors.$secondary900,
+  info50: colors.$info50,
+  info300: colors.$info300,
+  info500: colors.$info500,
+  info700: colors.$info700,
+  info900: colors.$info900,
+  success50: colors.$success50,
+  success300: colors.$success300,
+  success500: colors.$success500,
+  success700: colors.$success700,
+  success900: colors.$success900,
+  warning50: colors.$warning50,
+  warning300: colors.$warning300,
+  warning500: colors.$warning500,
+  warning700: colors.$warning700,
+  warning900: colors.$warning900,
+  error50: colors.$error50,
+  error300: colors.$error300,
+  error500: colors.$error500,
+  error700: colors.$error700,
+  error900: colors.$error900,
+  primary: colors.$primary700,
+  secondary: colors.$secondary700,
+  info: colors.$info700,
+  warning: colors.$warning700,
+  success: colors.$success700,
+  error: colors.$error700,
+  title: colors.$gray800,
+  text: colors.$gray700,
+  textLight: colors.$white,
+);
+
+@each $color, $value in $all_colors {
+  .#{"" + $color} {
+    color: $value;
+  }
+
+  .bg-#{"" + $color} {
+    background-color: $value;
+  }
+
+  .hover-#{"" + $color} {
+    &:hover {
+      color: $value !important;
+    }
+  }
+}
