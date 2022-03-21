@@ -1,17 +1,12 @@
 import React from "react";
 
+import classNames from "classnames";
+
 import { FiChevronDown, FiUser } from "react-icons/fi";
 
-import "./Avatar.module.scss";
+import { AvatarProps } from "./AvatarProps";
 
-export interface AvatarProps {
-  picture?: string;
-  label?: string;
-  hasDropdown?: boolean;
-  href?: string;
-  onClick?: () => void;
-  notificationNumber?: number;
-}
+import "./Avatar.scss";
 
 const Avatar: React.FC<AvatarProps> = ({
   notificationNumber = undefined,
@@ -19,11 +14,15 @@ const Avatar: React.FC<AvatarProps> = ({
   href,
   picture,
   label,
+  className,
   onClick,
 }) => {
   if (href) {
     return (
-      <a className="avatar-container-wrapper" href={href}>
+      <a
+        className={classNames("avatar-container-wrapper", className)}
+        href={href}
+      >
         {picture ? (
           <img className={"avatar-icon"} src={picture} />
         ) : (
@@ -46,7 +45,10 @@ const Avatar: React.FC<AvatarProps> = ({
   }
 
   return (
-    <div className={"avatar-container-wrapper"} onClick={onClick}>
+    <div
+      className={classNames("avatar-container-wrapper", className)}
+      onClick={onClick}
+    >
       {picture ? (
         <img className={"avatar-icon"} src={picture} />
       ) : (
