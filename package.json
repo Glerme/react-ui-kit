@@ -1,5 +1,5 @@
 {
-  "name": "@glerme/react-library-template",
+  "name": "@glerme/react-ui-kit",
   "version": "0.0.4",
   "description": "A react component library template",
   "main": "dist/cjs/index.js",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Glerme/react-library-template",
+    "url": "https://github.com/Glerme/react-ui-kit",
     "directory": "glerme/react-library-template"
   },
   "scripts": {
