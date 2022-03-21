@@ -1,5 +1,5 @@
 {
-  "name": "@glerme/react-ui-kit",
+  "name": "@glerme/react-ui-kit-components",
   "version": "0.0.4",
   "description": "A react component library template",
   "main": "dist/cjs/index.js",
