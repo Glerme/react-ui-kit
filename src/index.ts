@@ -12,5 +12,6 @@ import "./styles/utils/typography.utilities.scss";
 export * from "./components";
 
 export { ErrorContext } from "./contexts/ErrorContext";
-export { useError } from "./hooks/useError";
-export { useForm } from "./hooks/useForm";
+
+export { default as useError } from "./hooks/useError";
+export { default as useForm } from "./hooks/useForm";

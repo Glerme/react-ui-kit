@@ -7,7 +7,7 @@ describe("Form", () => {
   test("renders the Form Component", () => {
     render(
       <Form>
-        <input type="text" />
+        <></>
       </Form>
     );
   });

@@ -9,7 +9,7 @@ export type SubmitHandlerProps<T> = {
   callback: (formFields: T) => Promise<void>;
 };
 
-export const useForm = <T>(initialData: T) => {
+const useForm = <T>(initialData: T) => {
   const [fields, setFields] = useState<T>(initialData);
   const [errors, setErrors] = useState<any>({});
   const [buttonDisabled, setButtonDisabled] = useState(false);
@@ -86,3 +86,5 @@ export const useForm = <T>(initialData: T) => {
     submitHandler,
   };
 };
+
+export default useForm;

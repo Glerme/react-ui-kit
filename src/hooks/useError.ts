@@ -7,4 +7,6 @@ import {
   ErrorProvider,
 } from "../contexts/ErrorContext";
 
-export const useError = () => useContext(ErrorContext);
+const useError = () => useContext(ErrorContext);
+
+export default useError;
