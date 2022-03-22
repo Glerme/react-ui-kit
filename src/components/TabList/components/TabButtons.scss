@@ -1,0 +1,41 @@
+@import "../../../styles/colors.scss";
+
+.tab-buttons-container {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $gray200;
+  padding: 0 0.5rem;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+
+.tab-button {
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: $gray500;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0 0.3rem;
+  text-transform: uppercase;
+  transition: all 0.2s, color 0.2s;
+
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-color: $primary;
+  }
+
+  @media (max-width: 600px) {
+    margin: 0.3rem 0;
+  }
+}
+
+.active {
+  border-bottom-color: $primary;
+  color: $title;
+}

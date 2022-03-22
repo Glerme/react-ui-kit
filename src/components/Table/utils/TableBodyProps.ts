@@ -7,4 +7,5 @@ export interface TableBodyProps<T> {
   getRowId: (item: T) => string;
   sort?: Sort | null;
   onChangeSort?: (sort: Sort | null) => void;
+  classNameBody?: string;
 }

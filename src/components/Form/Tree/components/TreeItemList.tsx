@@ -7,7 +7,7 @@ import Checkbox from "./Checkbox";
 
 import { TreeItemListProps } from "./TreeItemListProps";
 
-import "./Tree.scss";
+import "../Tree.scss";
 
 export const TreeItemList: React.FC<TreeItemListProps> = ({
   items,

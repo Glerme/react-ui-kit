@@ -18,12 +18,16 @@ const Table = <T,>({
   sort,
   onChangeSort,
   headerSideComponent,
+  classNameBody,
+  classNamePagination,
+  classNameHeader,
 }: TableProps<T>) => {
   return (
     <section>
       <TableHeader
         title={`${title} (${totalCount})`}
         sideComponent={headerSideComponent}
+        classNameHeader={classNameHeader}
       />
       <TableBody
         columns={columns}
@@ -31,6 +35,7 @@ const Table = <T,>({
         getRowId={getRowId}
         sort={sort}
         onChangeSort={onChangeSort}
+        classNameBody={classNameBody}
       />
       <Pagination
         totalCount={totalCount}
@@ -38,6 +43,7 @@ const Table = <T,>({
         onChangePage={onChangePage}
         perPage={perPage}
         onChangePerPage={onChangePerPage}
+        classNamePagination={classNamePagination}
       />
     </section>
   );

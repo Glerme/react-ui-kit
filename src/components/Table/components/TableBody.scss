@@ -1,6 +1,6 @@
 @use 'sass:map';
-@use '../../styles/typography.scss';
-@import "../../styles/colors.scss";
+@use '../../../styles/typography.scss';
+@import "../../../styles/colors.scss";
 
 .table-container-wrapper {
   overflow-x: auto;

@@ -9,7 +9,7 @@ import {
 
 import classNames from "classnames";
 
-import { PaginationProps } from "./utils/PaginationProps";
+import { PaginationProps } from "../utils/PaginationProps";
 
 import "./Pagination.scss";
 
@@ -17,6 +17,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   page,
   perPage,
   totalCount,
+  classNamePagination,
   onChangePage,
   onChangePerPage,
 }) => {
@@ -25,7 +26,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   const lastPage = Math.ceil(totalCount / perPage);
 
   return (
-    <div className={classNames("pagination-container")}>
+    <div className={classNames("pagination-container", classNamePagination)}>
       <div className={classNames("pagination-per-page-container")}>
         <span className="caption text">Linhas por página</span>
         <select

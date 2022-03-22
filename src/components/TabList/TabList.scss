@@ -1,0 +1,28 @@
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tabListContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabContent {
+  display: flex;
+  background: transparent;
+  margin-top: 2rem;
+
+  & > section {
+    width: 100%;
+  }
+}
+
+.animate {
+  animation: opacityAnimation 1s ease-in-out;
+}

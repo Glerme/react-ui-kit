@@ -5,7 +5,7 @@ import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 
 import classNames from "classnames";
 
-import { TableBodyProps } from "./utils/TableBodyProps";
+import { TableBodyProps } from "../utils/TableBodyProps";
 
 import "./TableBody.scss";
 
@@ -15,9 +15,10 @@ export const TableBody = <T,>({
   getRowId,
   sort,
   onChangeSort,
+  classNameBody,
 }: TableBodyProps<T>) => {
   return (
-    <div className={classNames("table-container-wrapper")}>
+    <div className={classNames("table-container-wrapper", classNameBody)}>
       <table className={classNames("table-container")}>
         <thead className={classNames("table-head")}>
           <tr>

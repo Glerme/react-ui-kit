@@ -14,4 +14,7 @@ export interface TableProps<T> {
   sort?: Sort | null;
   onChangeSort?: (sort: Sort | null) => void;
   headerSideComponent?: () => JSX.Element;
+  classNameHeader?: string;
+  classNamePagination?: string;
+  classNameBody?: string;
 }

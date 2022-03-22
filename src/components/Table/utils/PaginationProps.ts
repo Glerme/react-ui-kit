@@ -4,4 +4,5 @@ export interface PaginationProps {
   totalCount: number;
   onChangePage: (page: number) => void;
   onChangePerPage: (perPage: number) => void;
+  classNamePagination?: string;
 }
