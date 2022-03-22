@@ -3,7 +3,7 @@ import React, { FormEvent, useEffect, useState } from "react";
 import classNames from "classnames";
 
 import { useError } from "../../../hooks/useError";
-import { FormProps, FormErrorState } from "./FormProps";
+import { FormProps } from "./FormProps";
 
 import "./Form.scss";
 
