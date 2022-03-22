@@ -1,0 +1,23 @@
+@import "../../../styles/utils/buttons.utilities.scss";
+
+.badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.275rem;
+
+  border-radius: 4px;
+  padding: 0.188rem 0.3rem;
+
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.is-clickable {
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
