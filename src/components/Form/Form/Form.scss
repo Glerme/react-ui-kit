@@ -1,0 +1,19 @@
+@use '../../../styles/breakpoints.scss';
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+
+  @include breakpoints.and-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
