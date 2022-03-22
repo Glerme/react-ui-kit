@@ -1,6 +1,6 @@
 {
   "name": "@glerme/react-ui-kit-components",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A react component library template",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -55,6 +55,7 @@
     "jest": "^27.5.1",
     "lodash": "^4.17.21",
     "postcss": "^8.4.12",
+    "postcss-scss": "^4.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
