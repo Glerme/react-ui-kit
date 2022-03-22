@@ -7,7 +7,7 @@ import classNames from "classnames";
 
 import { TableBodyProps } from "../utils/TableBodyProps";
 
-import "./TableBody.scss";
+import "./TableBody.module.scss";
 
 export const TableBody = <T,>({
   columns,

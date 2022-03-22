@@ -7,7 +7,7 @@ import ErrorMessage from "../ErrorMessage";
 
 import { InputWithIconProps } from "./InputWithIconProps";
 
-import "./InputWithIcon.scss";
+import "./InputWithIcon.module.scss";
 
 const InputWithIcon: React.FC<InputWithIconProps> = ({
   className,

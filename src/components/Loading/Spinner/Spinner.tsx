@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { SpinnerProps } from "./SpinnerProps";
 
-import "./Spinner.scss";
+import "./Spinner.module.scss";
 
 const Spinner: React.FC<SpinnerProps> = ({ size = "medium", className }) => (
   <div className={classNames("loading-spinner", `size-${size}`, className)} />

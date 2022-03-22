@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { CheckboxProps } from "./CheckboxProps";
 
-import "./Checkbox.scss";
+import "./Checkbox.module.scss";
 
 const Checkbox: React.FC<CheckboxProps> = ({
   name,

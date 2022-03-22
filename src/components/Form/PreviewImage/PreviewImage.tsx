@@ -6,7 +6,7 @@ import { FiTrash2 } from "react-icons/fi";
 
 import { PreviewImageProps } from "./PreviewImageProps";
 
-import "./PreviewImage.scss";
+import "./PreviewImage.module.scss";
 
 export const PreviewImage: React.FC<PreviewImageProps> = ({
   images,

@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { ErrorMessageProps } from "./ErrorMessageProps";
 
-import "./ErrorMessage.scss";
+import "./ErrorMessage.module.scss";
 
 const ErrorMessage: React.FC<ErrorMessageProps> = ({ error }) => (
   <section className={classNames("error-message-container")}>

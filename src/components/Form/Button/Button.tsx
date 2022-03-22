@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { ButtonProps } from "./ButtonProps";
 
-import "./Button.scss";
+import "./Button.module.scss";
 
 export const Button: React.FC<ButtonProps> = ({
   variant = "primary",

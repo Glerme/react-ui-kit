@@ -7,7 +7,7 @@ import ErrorMessage from "../ErrorMessage";
 
 import { InputMultiFileProps } from "./InputMultiFileProps";
 
-import "./InputMultiFile.scss";
+import "./InputMultiFile.module.scss";
 
 const InputMultiFile: React.FC<InputMultiFileProps> = ({
   background,

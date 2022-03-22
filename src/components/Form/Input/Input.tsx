@@ -7,7 +7,7 @@ import ErrorMessage from "../ErrorMessage";
 
 import { InputProps } from "./InputProps";
 
-import "./Input.scss";
+import "./Input.module.scss";
 
 const Input: React.FC<InputProps> = ({
   className,

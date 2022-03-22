@@ -1,6 +1,6 @@
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: "primary" | "secondary" | "success" | "error";
+  variant?: "primary" | "secondary" | "success" | "error";
   isOutlined?: boolean;
   onClick?: () => void;
   disabled?: boolean;
