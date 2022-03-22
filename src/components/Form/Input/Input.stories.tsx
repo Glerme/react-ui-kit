@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Story, ComponentMeta } from "@storybook/react";
 
-import Input from "../Input";
+import Input from "./Input";
 import { InputProps } from "./InputProps";
 
 export default {

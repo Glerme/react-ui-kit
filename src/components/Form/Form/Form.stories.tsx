@@ -4,7 +4,7 @@ import { useForm } from "../../../hooks/useForm";
 
 import { action } from "@storybook/addon-actions";
 
-import Form from "../Form";
+import Form from "./Form";
 import Input from "../Input";
 import Select from "../Select";
 import Button from "../Button";
