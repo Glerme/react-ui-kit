@@ -5,6 +5,8 @@ import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import copy from "rollup-plugin-copy";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import sass from "rollup-plugin-sass";
+import autoprefixer from "autoprefixer";
 
 const packageJson = require("./package.json");
 
@@ -30,10 +32,15 @@ export default [
       typescript({
         tsconfig: "./tsconfig.json",
       }),
+      sass({
+        output: "dist/bundle.css",
+      }),
       postcss({
-        modules: true,
         extract: false,
-        syntax: "postcss-scss",
+        writeDefinitions: true,
+        modules: true,
+        namedExports: true,
+        plugins: [autoprefixer()],
         use: ["sass"],
       }),
       copy({
