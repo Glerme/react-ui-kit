@@ -31,8 +31,9 @@ export default [
         tsconfig: "./tsconfig.json",
       }),
       postcss({
-        extract: false,
         modules: true,
+        extract: false,
+        syntax: "postcss-scss",
         use: ["sass"],
       }),
       copy({
