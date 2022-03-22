@@ -6,7 +6,7 @@ import { FiChevronDown, FiUser } from "react-icons/fi";
 
 import { AvatarProps } from "./AvatarProps";
 
-import "./Avatar.scss";
+import "./Avatar.module.scss";
 
 const Avatar: React.FC<AvatarProps> = ({
   notificationNumber = undefined,
