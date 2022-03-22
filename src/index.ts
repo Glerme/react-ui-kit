@@ -1,4 +1,3 @@
-import "./styles/global.scss";
 import "./styles/colors.scss";
 import "./styles/breakpoints.scss";
 import "./styles/shadows.scss";

@@ -44,11 +44,6 @@ export default [
             rename: "shadows.scss",
           },
           {
-            src: "src/styles/shadows.scss",
-            dest: "dist",
-            rename: "shadows.scss",
-          },
-          {
             src: "src/styles/breakpoints.scss",
             dest: "dist",
             rename: "breakpoints.scss",
