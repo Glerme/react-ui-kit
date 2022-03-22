@@ -1,6 +1,6 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
-import { useForm } from "../../../hooks/useForm";
+import useForm from "../../../hooks/useForm";
 
 import { action } from "@storybook/addon-actions";
 
