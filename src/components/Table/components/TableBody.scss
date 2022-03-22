@@ -1,0 +1,66 @@
+@use 'sass:map';
+@use '../../styles/typography.scss';
+@import "../../styles/colors.scss";
+
+.table-container-wrapper {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $gray200;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $secondary;
+    border-radius: 6px;
+  }
+}
+
+.table-container {
+  border-spacing: 0px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.table-head {
+  th {
+    border-bottom: solid $gray200 0.1rem;
+    color: $text;
+    font-size: map.get(typography.$sizes, "b2");
+    font-weight: map.get(typography.$weights, "b2");
+    padding: 1.25rem 0.7rem;
+    text-align: start;
+    white-space: nowrap;
+  }
+
+  .sortable {
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.table-body {
+  td {
+    border-bottom: solid $gray200 0.1rem;
+    color: $text;
+    font-size: map.get(typography.$sizes, "b3");
+    font-weight: map.get(typography.$weights, "b3");
+    padding: 0.7rem;
+    text-align: start;
+    white-space: nowrap;
+  }
+
+  tr:hover td {
+    background-color: $gray200;
+  }
+}

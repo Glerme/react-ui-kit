@@ -15,3 +15,4 @@ export { default as MultiSelect } from "./Form/MultiSelect";
 export { default as PreviewImage } from "./Form/PreviewImage";
 export { default as Select } from "./Form/Select";
 export { default as Tree } from "./Form/Tree";
+export { default as Table } from "./Table/Table";
