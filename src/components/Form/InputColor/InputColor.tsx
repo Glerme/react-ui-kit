@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import Label from "../Label";
 
-import "./InputColor.module.scss";
+import "./InputColor.scss";
 
 import { InputColorProps } from "./InputColorProps";
 

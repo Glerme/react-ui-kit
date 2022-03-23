@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import "./TableHeader.module.scss";
+import "./TableHeader.scss";
 
 interface TableHeaderProps {
   title: string;

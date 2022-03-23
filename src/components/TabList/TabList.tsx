@@ -6,7 +6,7 @@ import { TabButtons } from "./components/TabButtons";
 
 import { TabListProps } from "./TabListProps";
 
-import "./TabList.module.scss";
+import "./TabList.scss";
 
 const TabList: React.FC<TabListProps> = ({
   children,

@@ -7,7 +7,7 @@ import ErrorMessage from "../ErrorMessage";
 
 import { SelectProps } from "./SelectProps";
 
-import "./Select.module.scss";
+import "./Select.scss";
 
 const Select: React.FC<SelectProps> = ({
   className,

@@ -9,7 +9,7 @@ import ErrorMessage from "../ErrorMessage";
 
 import { MultiselectProps } from "./MultiselectProps";
 
-import "./Multiselect.module.scss";
+import "./Multiselect.scss";
 
 const Multiselect: React.FC<MultiselectProps> = ({
   name,

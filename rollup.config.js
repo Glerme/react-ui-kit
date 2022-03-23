@@ -5,7 +5,7 @@ import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import copy from "rollup-plugin-copy";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import autoprefixer from "autoprefixer";
+import scss from "rollup-plugin-scss";
 
 const packageJson = require("./package.json");
 
@@ -30,15 +30,33 @@ export default [
       commonjs(),
       typescript({
         tsconfig: "./tsconfig.json",
+        exclude: [
+          "**/*.spec.ts",
+          "**/*.test.ts",
+          "**/*.stories.ts",
+          "**/*.spec.tsx",
+          "**/*.test.tsx",
+          "**/*.stories.tsx",
+          "node_modules",
+          "bower_components",
+          "jspm_packages",
+          "dist",
+        ],
+        compilerOptions: {
+          sourceMap: true,
+          declaration: true,
+        },
       }),
-
+      scss({
+        output: "./dist/css/style.css",
+        sourceMap: true,
+        sass: require("node-sass"),
+        outputStyle: "compressed",
+      }),
       postcss({
-        extract: false,
-        writeDefinitions: true,
-        modules: true,
-        namedExports: true,
-        plugins: [autoprefixer()],
-        use: ["sass"],
+        minimize: true, // uses cssnano behind scene
+        modules: false, // enable css modules
+        extensions: [".css", ".scss", ".sass"], // uses node-sass
       }),
       copy({
         targets: [

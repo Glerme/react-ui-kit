@@ -5,7 +5,7 @@ import classNames from "classnames";
 import useError from "../../../hooks/useError";
 import { FormProps } from "./FormProps";
 
-import "./Form.module.scss";
+import "./Form.scss";
 
 const Form: React.FC<FormProps> = ({
   id,

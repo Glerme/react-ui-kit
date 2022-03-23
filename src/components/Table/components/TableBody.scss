@@ -1,5 +1,5 @@
-@use 'sass:map';
-@use '../../../styles/typography.scss';
+@use "sass:map" as map;
+@import "../../../styles/typography.scss";
 @import "../../../styles/colors.scss";
 
 .table-container-wrapper {

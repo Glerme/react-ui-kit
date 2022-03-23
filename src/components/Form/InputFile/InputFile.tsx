@@ -7,7 +7,7 @@ import ErrorMessage from "../ErrorMessage";
 
 import { InputFileProps } from "./InputFileProps";
 
-import "./InputFile.module.scss";
+import "./InputFile.scss";
 
 const InputFile: React.FC<InputFileProps> = ({
   background,

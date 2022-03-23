@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { TabButtonsProps } from "./TabButtonsProps";
 
-import "./TabButtons.module.scss";
+import "./TabButtons.scss";
 
 export const TabButtons: React.FC<TabButtonsProps> = ({
   activeTab,

@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { BadgeProps } from "./BadgeProps";
 
-import "./Badge.module.scss";
+import "./Badge.scss";
 
 const Badge: React.FC<BadgeProps> = ({
   children,

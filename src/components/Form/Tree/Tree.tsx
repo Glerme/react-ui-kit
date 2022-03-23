@@ -6,7 +6,7 @@ import { TreeItem, TreeProps } from "./TreeProps";
 
 import { TreeItemList } from "./components/TreeItemList";
 
-import "./Tree.module.scss";
+import "./Tree.scss";
 
 const Tree: React.FC<TreeProps> = ({ items, setItems, className }) => {
   const updateParent = (items: TreeItem[], parent_id: string | null) => {

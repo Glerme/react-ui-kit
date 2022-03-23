@@ -45,7 +45,6 @@
     "@types/dot-object": "^2.1.2",
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.40",
-    "autoprefixer": "^10.4.4",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.3",
     "classnames": "^2.3.1",
@@ -55,6 +54,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "lodash": "^4.17.21",
+    "node-sass": "^7.0.1",
     "postcss": "^8.4.12",
     "postcss-scss": "^4.0.3",
     "react": "^17.0.2",
@@ -65,6 +65,7 @@
     "rollup-plugin-dts": "^4.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
@@ -82,7 +83,5 @@
     "webpack": "*",
     "yup": ">=0.32"
   },
-  "dependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "dependencies": {}
 }

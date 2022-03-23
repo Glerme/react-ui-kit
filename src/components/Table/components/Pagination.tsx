@@ -11,7 +11,7 @@ import classNames from "classnames";
 
 import { PaginationProps } from "../utils/PaginationProps";
 
-import "./Pagination.module.scss";
+import "./Pagination.scss";
 
 export const Pagination: React.FC<PaginationProps> = ({
   page,
