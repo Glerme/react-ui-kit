@@ -1,12 +1,12 @@
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
+import typescript from "rollup-plugin-typescript2";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "rollup-plugin-typescript";
 import postcss from "rollup-plugin-postcss";
+import { uglify } from "rollup-plugin-uglify";
+import babel from "@rollup/plugin-babel";
 import dts from "rollup-plugin-dts";
 import copy from "rollup-plugin-copy";
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import { uglify } from "rollup-plugin-uglify";
-// import scss from "rollup-plugin-scss";
 
 const packageJson = require("./package.json");
 
@@ -21,28 +21,29 @@ export default [
       },
       {
         file: packageJson.module,
-        format: "esm",
+        format: "es",
         sourcemap: true,
       },
     ],
     plugins: [
+      dts(),
       peerDepsExternal(),
       resolve(),
-      commonjs(),
+      commonjs({ extensions: [".js", ".ts"] }),
       typescript({
-        tsconfig: "./tsconfig.json",
-        exclude: [
-          "**/*.spec.ts",
-          "**/*.test.ts",
-          "**/*.stories.ts",
-          "**/*.spec.tsx",
-          "**/*.test.tsx",
-          "**/*.stories.tsx",
-          "node_modules",
-          "bower_components",
-          "jspm_packages",
-          "dist",
-        ],
+        useTsconfigDeclarationDir: true,
+        tsconfigOverride: {
+          exclude: ["**/*.stories.*"],
+        },
+      }),
+      postcss({
+        minimize: true, // uses cssnano behind scene
+        modules: true, // enable css modules
+        extensions: [".css", ".scss", ".sass"], // uses node-sass
+      }),
+      babel({
+        exclude: "node_modules/**",
+        presets: ["@babel/preset-react"],
       }),
       copy({
         targets: [
@@ -83,23 +84,18 @@ export default [
           },
         ],
       }),
-      postcss({
-        minimize: true, // uses cssnano behind scene
-        modules: true, // enable css modules
-        extensions: [".css", ".scss", ".sass"], // uses node-sass
-      }),
       uglify(),
     ],
   },
-  // {
-  //   input: "dist/esm/types/index.d.ts",
-  //   output: [
-  //     {
-  //       file: "dist/index.d.ts",
-  //       format: "esm",
-  //     },
-  //   ],
-  //   plugins: [dts(), uglify()],
-  //   external: [/\.(css|less|scss)$/],
-  // },
+  {
+    input: "dist/index.d.ts",
+    output: [
+      {
+        file: "dist/index.d.ts",
+        format: "esm",
+      },
+    ],
+    plugins: [dts()],
+    external: [/\.(css|less|scss)$/],
+  },
 ];
