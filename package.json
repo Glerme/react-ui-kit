@@ -1,6 +1,6 @@
 {
   "name": "@glerme/react-ui-kit-components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A react component library template",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
