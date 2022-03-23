@@ -32,8 +32,8 @@ const Select: React.FC<SelectProps> = ({
         <select
           className={classNames(
             "select-field",
-            !!error ? "is-errored" : "",
-            disabled ? "is-disabled" : ""
+            !!error ? "is-errored-select" : "",
+            disabled ? "is-disabled-select" : ""
           )}
           id={name}
           name={name}

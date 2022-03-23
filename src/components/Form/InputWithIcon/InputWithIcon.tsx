@@ -25,20 +25,23 @@ const InputWithIcon: React.FC<InputWithIconProps> = ({
   const [inputFocus, setInputFocus] = useState(false);
 
   return (
-    <section className={classNames("input-section", className)} title={title}>
+    <section
+      className={classNames("input-section-with-icon", className)}
+      title={title}
+    >
       <Label htmlFor={name}>
         {label}
         <div
           className={classNames(
-            "input-field-container",
-            inputFocus ? "is-focused" : "",
-            !!error ? "is-errored" : "",
-            disabled ? "is-disabled" : ""
+            "input-field-container-with-icon",
+            inputFocus ? "is-focused-with-icon" : "",
+            !!error ? "is-errored-with-icon" : "",
+            disabled ? "is-disabled-with-icon" : ""
           )}
         >
           <input
             type="text"
-            className={classNames("input-field")}
+            className={classNames("input-field-with-icon")}
             id={name}
             name={name}
             value={value}

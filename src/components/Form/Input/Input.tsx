@@ -22,15 +22,16 @@ const Input: React.FC<InputProps> = ({
   ...rest
 }) => {
   return (
-    <section className={classNames("input-section", className)} title={title}>
+    <section className={classNames("input-section-normal", className)}>
       <Label htmlFor={name}>
         {label}
         <input
           type="text"
           className={classNames(
-            "input-field",
-            !!error ? "is-errored" : "",
-            disabled ? "is-disabled" : ""
+            "input-field-normal",
+            !!error ? "is-errored-normal" : "",
+            disabled ? "is-disabled-normal" : "",
+            className
           )}
           id={name}
           name={name}

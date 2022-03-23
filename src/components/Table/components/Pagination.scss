@@ -1,5 +1,5 @@
-@import "../../../styles/breakpoints.scss";
-@import "../../../styles/colors.scss";
+@use "../../../styles/colors.scss";
+@use "../../../styles/breakpoints.scss";
 
 .pagination-container {
   display: flex;
@@ -22,11 +22,11 @@
 
   select {
     border-radius: 0.3rem;
-    border-color: $gray400;
-    color: $text;
+    border-color: colors.$gray400;
+    color: colors.$text;
 
     &:hover {
-      border-color: $gray500;
+      border-color: colors.$gray500;
     }
   }
 }
@@ -40,12 +40,12 @@
     border: 0;
     border-radius: 50%;
     background: transparent;
-    color: var(--text);
+    color: colors.$text;
     padding: 0.5rem;
     transition: background 0.2s;
 
     &:not(:disabled):hover {
-      background: $gray200;
+      background: colors.$gray200;
     }
 
     &:disabled {

@@ -46,7 +46,7 @@ const Multiselect: React.FC<MultiselectProps> = ({
           name={name}
           className={classNames(
             "multi-select-field",
-            !!error ? "is-errored" : ""
+            !!error ? "is-errored-multiselect" : ""
           )}
           onChange={handleChange}
           {...rest}

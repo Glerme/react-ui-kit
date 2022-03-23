@@ -1,4 +1,4 @@
-@import "../../styles/colors.scss";
+@use "../../styles/colors.scss";
 
 .avatar-container-wrapper {
   display: inline-flex;
@@ -14,7 +14,7 @@
 
 .avatar-icon {
   border-radius: 50%;
-  background: $gray400;
+  background: colors.$gray400;
   padding: 3px;
 
   width: 28px;
@@ -31,9 +31,9 @@
   align-items: center;
 
   font-size: 0.5rem;
-  color: $white;
+  color: colors.$white;
 
-  background-color: $primary;
+  background-color: colors.$primary;
   position: absolute;
   left: 15px;
   top: -8px;

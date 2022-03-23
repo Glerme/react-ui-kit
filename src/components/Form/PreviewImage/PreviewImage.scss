@@ -1,5 +1,5 @@
-@import "../../../styles/breakpoints.scss";
-@import "../../../styles/colors.scss";
+@use "../../../styles/colors.scss";
+@use "../../../styles/breakpoints.scss";
 
 .img-container {
   display: grid;
@@ -15,8 +15,8 @@
   }
 
   figure {
-    background: $gray200;
-    border: 1px solid $gray300;
+    background: colors.$gray200;
+    border: 1px solid colors.$gray300;
     border-radius: 5px;
     overflow: hidden;
     position: relative;

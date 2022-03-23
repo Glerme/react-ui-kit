@@ -1,6 +1,6 @@
-@use "sass:map" as map;
-@import "../typography.scss";
-@import "../colors.scss";
+@use "sass:map";
+@use "../typography.scss";
+@use "../colors.scss";
 
 .heading1 {
   font-size: map.get(typography.$sizes, "h1");

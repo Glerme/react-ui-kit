@@ -1,10 +1,10 @@
-@import "../../../styles/colors.scss";
+@use "../../../styles/colors.scss";
 
 .tab-buttons-container {
   display: flex;
   flex-direction: column;
 
-  border-bottom: 1px solid $gray200;
+  border-bottom: 1px solid colors.$gray200;
   padding: 0 0.5rem;
 
   @media (min-width: 600px) {
@@ -16,7 +16,7 @@
   background: transparent;
   border: 0;
   border-bottom: 3px solid transparent;
-  color: $gray500;
+  color: colors.$gray500;
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem;
@@ -27,7 +27,7 @@
   cursor: pointer;
 
   &:hover {
-    border-bottom-color: $primary;
+    border-bottom-color: colors.$primary;
   }
 
   @media (max-width: 600px) {
@@ -36,6 +36,6 @@
 }
 
 .active {
-  border-bottom-color: $primary;
-  color: $title;
+  border-bottom-color: colors.$primary;
+  color: colors.$title;
 }

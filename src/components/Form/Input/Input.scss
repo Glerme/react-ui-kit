@@ -1,6 +1,6 @@
-@import "../../../styles/colors.scss";
+@use "../../../styles/colors.scss";
 
-.input-section {
+.input-section-normal {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -8,15 +8,15 @@
   width: 100%;
 }
 
-.input-field {
+.input-field-normal {
   display: flex;
   align-items: center;
 
-  background: $gray50;
-  border: 1px solid $gray300;
+  background: colors.$gray50;
+  border: 1px solid colors.$gray300;
   border-radius: 0.5rem;
 
-  color: $text;
+  color: colors.$text;
   font-size: 1rem;
   font-weight: 500;
 
@@ -28,19 +28,19 @@
   padding: 0 0.5rem;
 
   &:hover {
-    border-color: $primary;
+    border-color: colors.$primary;
   }
 
   &::placeholder {
-    color: $gray400;
+    color: colors.$gray400;
   }
 
   &:focus {
-    border-color: var(--primary) !important;
+    border-color: colors.$primary !important;
   }
 
   &:-webkit-autofill {
-    box-shadow: 0 0 0 30px $white inset;
+    box-shadow: 0 0 0 30px colors.$white inset;
   }
 
   &::-moz-placeholder {
@@ -54,25 +54,25 @@
   }
 }
 
-.is-errored {
-  border-color: $error !important;
+.is-errored-normal {
+  border-color: colors.$error !important;
 }
 
-.is-filled {
-  border-color: $success !important;
+.is-filled-normal {
+  border-color: colors.$success !important;
 }
 
-.is-focused {
-  border-color: $gray400 !important;
+.is-focused-normal {
+  border-color: colors.$gray400 !important;
 }
 
-.is-disabled {
+.is-disabled-normal {
   pointer-events: none;
 
-  background-color: $gray200;
-  border: 1px solid $gray300;
+  background-color: colors.$gray200;
+  border: 1px solid colors.$gray300;
 
   &:hover {
-    border-color: $gray300;
+    border-color: colors.$gray300;
   }
 }

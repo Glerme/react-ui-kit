@@ -1,11 +1,12 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "@rollup/plugin-typescript";
+import typescript from "rollup-plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import copy from "rollup-plugin-copy";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import scss from "rollup-plugin-scss";
+import { uglify } from "rollup-plugin-uglify";
+// import scss from "rollup-plugin-scss";
 
 const packageJson = require("./package.json");
 
@@ -42,21 +43,6 @@ export default [
           "jspm_packages",
           "dist",
         ],
-        compilerOptions: {
-          sourceMap: true,
-          declaration: true,
-        },
-      }),
-      scss({
-        output: "./dist/css/style.css",
-        sourceMap: true,
-        sass: require("node-sass"),
-        outputStyle: "compressed",
-      }),
-      postcss({
-        minimize: true, // uses cssnano behind scene
-        modules: false, // enable css modules
-        extensions: [".css", ".scss", ".sass"], // uses node-sass
       }),
       copy({
         targets: [
@@ -95,24 +81,25 @@ export default [
             dest: "dist",
             rename: "buttons.utilities.scss",
           },
-          {
-            src: "src/styles/utils/fields.utilities.scss",
-            dest: "dist",
-            rename: "fields.utilities.scss",
-          },
         ],
       }),
+      postcss({
+        minimize: true, // uses cssnano behind scene
+        modules: true, // enable css modules
+        extensions: [".css", ".scss", ".sass"], // uses node-sass
+      }),
+      uglify(),
     ],
   },
-  {
-    input: "dist/esm/types/index.d.ts",
-    output: [
-      {
-        file: "dist/index.d.ts",
-        format: "esm",
-      },
-    ],
-    plugins: [dts()],
-    external: [/\.(css|less|scss)$/],
-  },
+  // {
+  //   input: "dist/esm/types/index.d.ts",
+  //   output: [
+  //     {
+  //       file: "dist/index.d.ts",
+  //       format: "esm",
+  //     },
+  //   ],
+  //   plugins: [dts(), uglify()],
+  //   external: [/\.(css|less|scss)$/],
+  // },
 ];

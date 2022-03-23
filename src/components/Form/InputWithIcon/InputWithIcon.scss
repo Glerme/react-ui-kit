@@ -1,6 +1,6 @@
-@import "../../../styles/colors.scss";
+@use "../../../styles/colors.scss";
 
-.input-section {
+.input-section-with-icon {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -8,15 +8,15 @@
   width: 100%;
 }
 
-.input-field-container {
+.input-field-container-with-icon {
   display: flex;
   align-items: center;
 
-  background: $gray50;
-  border: 1px solid $gray300;
+  background: colors.$gray50;
+  border: 1px solid colors.$gray300;
   border-radius: 0.25rem;
 
-  color: $text;
+  color: colors.$text;
 
   font-size: 1rem;
   font-weight: 500;
@@ -29,14 +29,14 @@
   padding: 0 0.5rem;
 
   &:hover {
-    border-color: $primary;
+    border-color: colors.$primary;
   }
 }
 
-.input-field {
+.input-field-with-icon {
   background: transparent;
   border: 0;
-  color: $text;
+  color: colors.$text;
   font-size: 1rem;
   font-weight: 500;
   outline: 0;
@@ -46,11 +46,11 @@
   height: 100%;
 
   &::placeholder {
-    color: $gray400;
+    color: colors.$gray400;
   }
 
   &:-webkit-autofill {
-    box-shadow: 0 0 0 30px $white inset;
+    box-shadow: 0 0 0 30px colors.$white inset;
   }
 
   &::-moz-placeholder {
@@ -64,37 +64,37 @@
   }
 }
 
-.is-disabled {
+.is-disabled-with-icon {
   cursor: default;
 
-  background-color: $gray200;
-  border: 1px solid $gray300;
+  background-color: colors.$gray200;
+  border: 1px solid colors.$gray300;
 
   &:hover {
-    border-color: $gray300;
+    border-color: colors.$gray300;
   }
 }
 
-.is-errored {
-  border-color: $error !important;
+.is-errored-with-icon {
+  border-color: colors.$error !important;
 
   svg {
-    color: $error;
+    color: colors.$error;
   }
 }
 
-.is-filled {
-  border-color: $success !important;
+.is-filled-with-icon {
+  border-color: colors.$success !important;
 
   svg {
-    color: $success;
+    color: colors.$success;
   }
 }
 
-.is-focused {
-  border-color: $primary !important;
+.is-focused-with-icon {
+  border-color: colors.$primary !important;
 
   svg {
-    color: $primary;
+    color: colors.$primary;
   }
 }
