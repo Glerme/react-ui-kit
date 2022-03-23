@@ -3,11 +3,7 @@ import { useState } from "react";
 import _ from "lodash";
 import * as Yup from "yup";
 import dot from "dot-object";
-
-export type SubmitHandlerProps<T> = {
-  validateSchema?: Yup.AnyObjectSchema;
-  callback: (formFields: T) => Promise<void>;
-};
+import { SubmitHandlerProps } from "./types/SubmitHandlerProps";
 
 const useForm = <T>(initialData: T) => {
   const [fields, setFields] = useState<T>(initialData);
