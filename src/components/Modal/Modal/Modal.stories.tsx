@@ -4,7 +4,6 @@ import { action } from "@storybook/addon-actions";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 import Modal from "./Modal";
-import Spinner from "../../Loading/Spinner/Spinner";
 
 export default {
   title: "Modal/Modal",
