@@ -5,7 +5,7 @@ import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 
 import classNames from "classnames";
 
-import { TableBodyProps } from "../utils/TableBodyProps";
+import { TableBodyProps } from "../utils/TableBodyProps.types";
 
 import "./TableBody.scss";
 

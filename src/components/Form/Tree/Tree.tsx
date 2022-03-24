@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { TreeItem, TreeProps } from "./TreeProps";
+import { TreeItem, TreeProps } from "./Tree.types";
 
 import { TreeItemList } from "./components/TreeItemList";
 

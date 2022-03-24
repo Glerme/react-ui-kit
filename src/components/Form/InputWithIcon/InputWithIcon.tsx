@@ -5,7 +5,7 @@ import classNames from "classnames";
 import Label from "../Label";
 import ErrorMessage from "../ErrorMessage";
 
-import { InputWithIconProps } from "./InputWithIconProps";
+import { InputWithIconProps } from "./InputWithIcon.types";
 
 import "./InputWithIcon.scss";
 

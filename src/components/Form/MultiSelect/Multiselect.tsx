@@ -7,7 +7,7 @@ import { FiX } from "react-icons/fi";
 import Label from "../Label";
 import ErrorMessage from "../ErrorMessage";
 
-import { MultiselectProps } from "./MultiselectProps";
+import { MultiselectProps } from "./Multiselect.types";
 
 import "./Multiselect.scss";
 

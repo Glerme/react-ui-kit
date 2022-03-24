@@ -6,7 +6,7 @@ import Label from "../Label";
 
 import "./InputColor.scss";
 
-import { InputColorProps } from "./InputColorProps";
+import { InputColorProps } from "./InputColor.types";
 
 const InputColor: React.FC<InputColorProps> = ({
   label,

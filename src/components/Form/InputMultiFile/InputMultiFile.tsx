@@ -5,7 +5,7 @@ import classNames from "classnames";
 import Label from "../Label";
 import ErrorMessage from "../ErrorMessage";
 
-import { InputMultiFileProps } from "./InputMultiFileProps";
+import { InputMultiFileProps } from "./InputMultiFile.types";
 
 import "./InputMultiFile.scss";
 

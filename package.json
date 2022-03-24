@@ -20,7 +20,8 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepublish": "rm -rf ./dist && yarn test && yarn rollup"
+    "prepublish": "rm -rf ./dist && yarn test && yarn rollup",
+    "generate": "node ./util/create-component"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

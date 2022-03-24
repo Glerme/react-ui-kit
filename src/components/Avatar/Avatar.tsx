@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { FiChevronDown, FiUser } from "react-icons/fi";
 
-import { AvatarProps } from "./AvatarProps";
+import { AvatarProps } from "./Avatar.types";
 
 import "./Avatar.scss";
 

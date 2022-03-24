@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { ErrorMessageProps } from "./ErrorMessageProps";
+import { ErrorMessageProps } from "./ErrorMessage.types";
 
 import "./ErrorMessage.scss";
 

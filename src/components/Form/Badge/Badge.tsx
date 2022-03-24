@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { BadgeProps } from "./BadgeProps";
+import { BadgeProps } from "./Badge.types";
 
 import "./Badge.scss";
 

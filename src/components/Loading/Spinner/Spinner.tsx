@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { SpinnerProps } from "./SpinnerProps";
+import { SpinnerProps } from "./Spinner.types";
 
 import "./Spinner.scss";
 
