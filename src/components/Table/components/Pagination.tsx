@@ -9,7 +9,7 @@ import {
 
 import classNames from "classnames";
 
-import { PaginationProps } from "../utils/PaginationProps";
+import { PaginationProps } from "../utils/Pagination.types";
 
 import "./Pagination.scss";
 

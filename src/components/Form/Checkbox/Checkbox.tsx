@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { CheckboxProps } from "./CheckboxProps";
+import { CheckboxProps } from "./Checkbox.types";
 
 import "./Checkbox.scss";
 

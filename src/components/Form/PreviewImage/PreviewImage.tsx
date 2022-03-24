@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { FiTrash2 } from "react-icons/fi";
 
-import { PreviewImageProps } from "./PreviewImageProps";
+import { PreviewImageProps } from "./PreviewImage.types";
 
 import "./PreviewImage.scss";
 

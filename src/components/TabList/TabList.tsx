@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { TabButtons } from "./components/TabButtons";
 
-import { TabListProps } from "./TabListProps";
+import { TabListProps } from "./TabList.types";
 
 import "./TabList.scss";
 

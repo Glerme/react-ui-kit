@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { LabelProps } from "./LabelProps";
+import { LabelProps } from "./Label.types";
 
 import "./Label.scss";
 

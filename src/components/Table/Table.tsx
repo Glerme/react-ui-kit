@@ -3,7 +3,7 @@ import React from "react";
 import { Pagination } from "./components/Pagination";
 import { TableHeader } from "./components/TableHeader";
 import { TableBody } from "./components/TableBody";
-import { TableProps } from "./utils/TableProps";
+import { TableProps } from "./utils/TableProps.types";
 
 const Table = <T,>({
   title,

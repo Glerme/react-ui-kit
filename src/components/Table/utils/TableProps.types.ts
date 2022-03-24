@@ -1,5 +1,5 @@
-import { Column } from "./Column";
-import { Sort } from "./Sort";
+import { Column } from "./Column.types";
+import { Sort } from "./Sort.types";
 
 export interface TableProps<T> {
   title: string;

@@ -30,5 +30,5 @@ generatedTemplates.forEach((template) => {
 });
 
 console.log(
-  "Successfully created component under: " + componentDirectory.green
+  "Successfully created component under: " + componentDirectory.green.underline
 );
