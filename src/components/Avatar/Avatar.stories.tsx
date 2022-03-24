@@ -15,6 +15,12 @@ export default {
     hasDropdown: {
       defaultValue: true,
     },
+    picture: { defaultValue: "https://via.placeholder.com/150" },
+    notificationNumber: {
+      defaultValue: 10,
+    },
+    href: { defaultValue: "#" },
+    onClick: { action: "clicked" },
   },
 } as ComponentMeta<typeof Avatar>;
 

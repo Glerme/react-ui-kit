@@ -8,6 +8,7 @@ import Table from "./Table";
 export default {
   title: "Table/Table",
   component: Table,
+  argTypes: {},
 } as ComponentMeta<typeof Table>;
 
 const Template: Story = (args) => {
@@ -19,9 +20,9 @@ const Template: Story = (args) => {
       title="Users"
       totalCount={3}
       columns={[
-        { label: "ID", key: "id" },
-        { label: "Name", key: "name" },
-        { label: "Email", key: "email" },
+        { label: "ID", key: "id", sortable: true },
+        { label: "Name", key: "name", sortable: true },
+        { label: "Email", key: "email", sortable: true },
       ]}
       items={[
         {
