@@ -1,0 +1,77 @@
+@use "../../../styles/colors.scss";
+
+.radio-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+
+  width: 100%;
+}
+
+.radio-option-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  color: colors.$gray700;
+  font-weight: 500;
+  width: 100%;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: colors.$gray700;
+    font-weight: 500;
+    margin-left: 0.3rem;
+  }
+
+  input[type="radio"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: colors.$gray50;
+    border-radius: 50%;
+    border: 1px solid colors.$gray300;
+
+    width: 20px;
+    height: 20px;
+
+    outline: 0;
+    -webkit-appearance: none;
+
+    &:after {
+      border-radius: 50%;
+      content: "";
+      width: 14px;
+      height: 14px;
+    }
+
+    &:checked:after {
+      background-color: colors.$primary;
+    }
+  }
+}
+
+.is-errored-radio {
+  border-color: colors.$error !important;
+}
+
+.is-filled-radio {
+  border-color: colors.$success !important;
+}
+
+.is-focused-radio {
+  border-color: colors.$gray400 !important;
+}
