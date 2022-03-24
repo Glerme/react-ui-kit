@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import Badge from "./Badge";
-import { BadgeProps } from "./BadgeProps";
+import { BadgeProps } from "./Badge.types";
 
 export default {
   title: "Form/Badge",

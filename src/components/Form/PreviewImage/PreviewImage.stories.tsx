@@ -3,7 +3,7 @@ import { Story, ComponentMeta } from "@storybook/react";
 
 import PreviewImage from "./PreviewImage";
 
-import { PreviewImageProps } from "./PreviewImageProps";
+import { PreviewImageProps } from "./PreviewImage.types";
 
 export default {
   title: "Form/Preview Image",

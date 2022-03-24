@@ -5,7 +5,7 @@ import { FiUser } from "react-icons/fi";
 import { Story, ComponentMeta } from "@storybook/react";
 
 import InputWithIcon from "./InputWithIcon";
-import { InputWithIconProps } from "./InputWithIconProps";
+import { InputWithIconProps } from "./InputWithIcon.types";
 
 export default {
   title: "Form/Input Icon",

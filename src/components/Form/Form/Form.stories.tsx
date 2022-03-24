@@ -9,7 +9,7 @@ import Input from "../Input";
 import Select from "../Select";
 import Button from "../Button";
 
-import { FormProps } from "./FormProps";
+import { FormProps } from "./Form.types";
 
 export default {
   title: "Form/Form",

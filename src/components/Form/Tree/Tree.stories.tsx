@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Story, ComponentMeta } from "@storybook/react";
 
 import Tree from "./Tree";
-import { TreeItem, TreeProps } from "./TreeProps";
+import { TreeItem, TreeProps } from "./Tree.types";
 
 export default {
   title: "Form/Tree",

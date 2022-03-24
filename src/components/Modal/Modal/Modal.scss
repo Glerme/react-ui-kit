@@ -1,0 +1,95 @@
+@use '../../../styles/breakpoints.scss';
+@use '../../../styles/colors.scss';
+
+@keyframes modalScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-frame-container {
+  display: flex;
+  flex-direction: column;
+
+  animation: modalScale 0.3s ease-in-out;
+
+  background-color: colors.$white;
+  border: 1px solid colors.$gray300;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 12px rgba(20, 44, 75, 0.5);
+
+  max-width: 1140px;
+
+  padding: 1.5rem 1rem;
+
+  transform: scale(1);
+
+  width: 100%;
+
+  z-index: 100;
+
+  @include breakpoints.and-up(lg) {
+    padding: 2rem;
+  }
+}
+
+.modal-xl {
+  max-width: 1140px;
+}
+
+.modal-lg {
+  max-width: 800px;
+}
+
+.modal-sm {
+  max-width: 500px;
+}
+
+.modal-frame-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    margin: 0;
+  }
+
+  button {
+    border: 0;
+    background: transparent;
+    font-size: 0;
+    color: colors.$gray500;
+    transition: color 0.2s;
+
+    &:hover {
+      color: colors.$title;
+    }
+  }
+}
+
+.modal-frame-main-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+  max-height: 600px;
+  padding: 0 calc(0.5rem - 5px) 0 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(20, 44, 75, 0.5);
+    border-radius: 10px;
+  }
+}
