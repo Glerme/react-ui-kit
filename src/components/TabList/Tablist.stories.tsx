@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import TabList from "./TabList";
-import { TabListProps } from "./TabListProps";
+import { TabListProps } from "./TabList.types";
 
 export default {
   title: "Tablist/Tablist",

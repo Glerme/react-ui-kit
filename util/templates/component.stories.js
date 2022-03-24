@@ -3,7 +3,7 @@ module.exports = (componentName) => ({
 // Generated with util/create-component.js
 import React from "react";
 
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Story, ComponentMeta } from "@storybook/react";
 
 import ${componentName} from "./${componentName}";
 
@@ -14,7 +14,7 @@ export default {
 } as ComponentMeta<typeof ${componentName}>;
 
 
-const Template: ComponentStory<typeof ${componentName}> = (args) => <${componentName} {...args} />;
+const Template: ComponentStory<${componentName}Props> = (args) => <${componentName} {...args} />;
 
 export const Default = Template.bind({});
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Story, ComponentMeta } from "@storybook/react";
 
-import { Sort } from "../../components/Table/utils/Sort";
+import { Sort } from "../../components/Table/utils/Sort.types";
 import Table from "./Table";
 
 export default {

@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import InputColor from "./InputColor";
-import { InputColorProps } from "../InputColor/InputColorProps";
+import { InputColorProps } from "./InputColor.types";
 
 export default {
   title: "Form/Input Color",

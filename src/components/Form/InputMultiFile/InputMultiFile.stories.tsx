@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import InputMultiFile from "./InputMultiFile";
-import { InputMultiFileProps } from "./InputMultiFileProps";
+import { InputMultiFileProps } from "./InputMultiFile.types";
 
 export default {
   title: "Form/Input Multiple Files",

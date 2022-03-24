@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import Checkbox from "./Checkbox";
-import { CheckboxProps } from "./CheckboxProps";
+import { CheckboxProps } from "./Checkbox.types";
 
 export default {
   title: "Form/Checkbox",

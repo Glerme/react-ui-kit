@@ -1,0 +1,38 @@
+@use '../../../styles/breakpoints.scss';
+@use '../../../styles/colors.scss';
+
+.modal-confirm-frame-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  background: colors.$white;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(20, 44, 75, 0.5);
+  padding: 1rem;
+
+  min-width: 280px;
+
+  z-index: 1000;
+
+  button:focus {
+    border: 2px solid black;
+  }
+
+  @include breakpoints.and-up(md) {
+    padding: 2rem 3rem;
+  }
+}
+
+.modal-confirm-frame-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  place-items: center;
+  width: 100%;
+
+  @include breakpoints.and-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

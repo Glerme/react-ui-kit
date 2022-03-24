@@ -1,0 +1,63 @@
+@keyframes modalScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes overlayOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.overlay {
+  display: grid;
+  place-items: center;
+
+  animation: overlayOpacity 0.2s ease-in-out;
+  background: rgba(20, 44, 75, 0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 1rem;
+  overflow-y: auto;
+
+  transition: background 0.3s;
+
+  cursor: default;
+
+  z-index: 199;
+}
+
+.modal-frame {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  animation: modalScale 0.3s ease-in-out;
+  background-color: var(--color-white);
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(20, 44, 75, 0.5);
+
+  padding: 1.75rem;
+  max-width: 600px;
+  width: 100%;
+
+  transform: scale(1);
+  z-index: 200;
+
+  > button {
+    max-width: 180px;
+    margin-top: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import InputFile from "./InputFile";
-import { InputFileProps } from "./InputFileProps";
+import { InputFileProps } from "./InputFile.types";
 
 export default {
   title: "Form/Input File",

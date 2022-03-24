@@ -1,10 +1,11 @@
 import React from "react";
 
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Story, ComponentMeta } from "@storybook/react";
 
 import useForm from "../../../hooks/useForm";
 
 import Radio from "./Radio";
+import { RadioProps } from "./Radio.types";
 
 export default {
   title: "Form/Radio",
@@ -31,7 +32,7 @@ export default {
   },
 } as ComponentMeta<typeof Radio>;
 
-const Template: ComponentStory<typeof Radio> = (args) => {
+const Template: Story<RadioProps> = (args) => {
   const { errors, fields, setFields } = useForm({
     active: "",
   });

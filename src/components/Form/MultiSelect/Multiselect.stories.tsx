@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from "@storybook/react";
 
 import Multiselect from "./Multiselect";
-import { MultiselectProps } from "./MultiselectProps";
+import { MultiselectProps } from "./Multiselect.types";
 
 export default {
   title: "Form/Multiselect",

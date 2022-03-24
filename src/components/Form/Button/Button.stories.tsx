@@ -5,7 +5,7 @@ import { Story, ComponentMeta } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import Button from "./Button";
-import { ButtonProps } from "./ButtonProps";
+import { ButtonProps } from "./Button.types";
 
 export default {
   title: "Form/Button",
