@@ -1,4 +1,3 @@
-// Generated with util/create-component.js
 import React from "react";
 
 import { ComponentMeta, ComponentStory } from "@storybook/react";
@@ -6,7 +5,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import ModalOverlay from "./ModalOverlay";
 
 export default {
-  title: "Modal/ModalOverlay",
+  title: "Modal/Modal Overlay",
   component: ModalOverlay,
   argTypes: {},
 } as ComponentMeta<typeof ModalOverlay>;

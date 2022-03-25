@@ -4,7 +4,7 @@ import ModalError from "./ModalError";
 import { ModalErrorProps } from "./ModalError.types";
 
 export default {
-  title: "Loading/ModalError",
+  title: "Modal/Modal Error",
   component: ModalError,
   argTypes: {},
 } as ComponentMeta<typeof ModalError>;

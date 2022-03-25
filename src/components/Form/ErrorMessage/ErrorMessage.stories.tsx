@@ -4,7 +4,7 @@ import ErrorMessage from "./ErrorMessage";
 import { ErrorMessageProps } from "./ErrorMessage.types";
 
 export default {
-  title: "Form/ErrorMessage",
+  title: "Form/Error Message",
   component: ErrorMessage,
   argTypes: {
     error: {

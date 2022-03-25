@@ -14,7 +14,7 @@ export default {
       defaultValue: true,
     },
     title: {
-      defaultValue: "ModalConfirm",
+      defaultValue: "Modal Confirm",
     },
     size: {
       defaultValue: "xl",

@@ -4,7 +4,7 @@ import ErrorDetails from "./ErrorDetails";
 import { ErrorDetailsProps } from "./ErrorDetails.types";
 
 export default {
-  title: "Error/ErrorDetails",
+  title: "Error/Error Details",
   component: ErrorDetails,
   argTypes: {
     error: {
