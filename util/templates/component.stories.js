@@ -6,6 +6,9 @@ import { Story, ComponentMeta } from "@storybook/react";
 
 import ${componentName} from "./${componentName}";
 
+import ${componentName}Props from "./${componentName}.types";
+
+
 export default {
   title: "Foo/${componentName}",
   component: ${componentName},

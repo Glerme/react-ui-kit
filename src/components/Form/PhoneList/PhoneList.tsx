@@ -42,7 +42,7 @@ const PhoneList: React.FC<PhoneListProps> = ({
       {telefones.map((telefone, index) => (
         <section
           key={`telefone-${index}`}
-          className={classNames("telefone-section", className ? className : "")}
+          className={classNames("telefone-section", className)}
         >
           <InputPhone
             isWhatsapp={telefone.whatsapp}
